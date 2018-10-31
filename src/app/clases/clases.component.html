@@ -1,0 +1,21 @@
+<div class="card" *ngIf = "claseSeleccionada">
+  <div class="card-body">
+    <h2 class="card-title">
+      {{claseSeleccionada.nombre}}
+    </h2>
+    <div class="card-text">
+      <div class="form-group">
+        Id:
+        <input type="number" class="form-control" value="{{claseSeleccionada.id}}">
+      </div>
+      <div class="form-group">
+        Seccion:
+        <input type="text" class="form-control" value="{{claseSeleccionada.seccion}}">
+      </div>
+      <div class="form-group">
+        Cantidad:
+        <input type="number" class="form-control" value="{{claseSeleccionada.cantidad}}">
+      </div>
+    </div>
+  </div>
+</div>
