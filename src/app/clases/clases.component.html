@@ -1,3 +1,31 @@
+<div class="card">
+  <div class="card-body">
+    <h2 class="card-title">
+      Clases
+    </h2>
+    <div class="card-text">
+      <div class="table-responsive">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <td>Nombre</td>
+              <td>Seccion</td>
+              <td>Cantidad de Alumnos</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor = "let clase of clases" (click) = "onClick(clase);">
+              <td>{{clase.nombre}}</td>
+              <td>{{clase.seccion}}</td>
+              <td>{{clase.cantidad}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
 <div class="card" *ngIf = "claseSeleccionada">
   <div class="card-body">
     <h2 class="card-title">

@@ -17,4 +17,7 @@ export class ClasesComponent implements OnInit {
     this.clases = ClasesMock;
   }
 
+  onClick(clase : Clase): void{
+    this.claseSeleccionada = clase;
+  }
 }
